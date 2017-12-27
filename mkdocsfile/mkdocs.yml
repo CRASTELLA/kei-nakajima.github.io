@@ -1,0 +1,42 @@
+# Project information
+site_name: 'journutes'
+site_description: '徒然なるままに'
+site_author: 'Kei-Nakajima'
+site_url: 'http://https://kei-nakajima.github.io'
+
+ # Copyright
+copyright: 'Kei Nakajima Copyright (c) 2017'
+
+theme: material
+
+extra:
+    palette:
+        primary: 'Light Blue'
+        accent: 'Orange'
+    font:
+        # text: 'Roboto'
+        code: 'Roboto Mono'
+    i18n:
+        prev: 'Previous'
+        next: 'Next'
+    author:
+        github: 'kei-nakajima'
+        twitter: 'NjK'
+
+extra_css:
+    - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "https://fonts.googleapis.com/css?family=Open+Sans:600,800"
+    - "css/custom.css"
+    - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+
+
+extra_javascript: 
+  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML
+
+markdown_extensions:
+    - mdx_math:
+        enable_dollar_delimiter: true
+    - admonition
+    - fontawesome_markdown
+    - pymdownx.emoji
