@@ -7,11 +7,6 @@ site_url: 'https://kei-nakajima.github.io'
  # Copyright
 copyright: 'Kei Nakajima Copyright (c) 2017'
 
-# pages
-pages:
-    - 'Introduction': 'index.md'
-    - 'paper-summary': 'test.md'
-
 theme: material
 
 extra:
