@@ -12,8 +12,38 @@
     
         
     <url>
+     <loc>https://kei-nakajima.github.io</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://kei-nakajima.github.io/computer/Deep Learning/</loc>
+     <lastmod>2017-12-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>https://kei-nakajima.github.io/paper-summary/test/</loc>
      <lastmod>2017-12-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>https://kei-nakajima.github.io</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
