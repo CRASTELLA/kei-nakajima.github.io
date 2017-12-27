@@ -1,11 +1,16 @@
 # Project information
-site_name: 'journutes'
+site_name: 'kei_journutes'
 site_description: '徒然なるままに'
 site_author: 'Kei-Nakajima'
-site_url: 'http://https://kei-nakajima.github.io'
+site_url: 'https://kei-nakajima.github.io'
 
  # Copyright
 copyright: 'Kei Nakajima Copyright (c) 2017'
+
+# pages
+pages:
+    - 'Introduction': 'index.md'
+    - 'paper-summary': 'test.md'
 
 theme: material
 
@@ -30,7 +35,7 @@ extra_css:
     - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
 
 
-extra_javascript: 
+extra_javascript:
   - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML
 
