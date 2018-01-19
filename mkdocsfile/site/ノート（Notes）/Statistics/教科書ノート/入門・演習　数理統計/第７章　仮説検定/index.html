@@ -1,0 +1,983 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="徒然なるままに">
+      
+      
+        <link rel="canonical" href="https://kei-nakajima.github.io/ノート（Notes）/Statistics/教科書ノート/入門・演習　数理統計/第７章　仮説検定/">
+      
+      
+        <meta name="author" content="Kei-Nakajima">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.5">
+    
+    
+      
+        <title>第７章　仮説検定 - kei_journutes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/application.bcabdff3.css">
+      
+    
+    
+      <script src="../../../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:600,800">
+    
+      <link rel="stylesheet" href="../../../../../css/custom.css">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    
+    
+  </head>
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://kei-nakajima.github.io" title="kei_journutes" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                kei_journutes
+              </span>
+              <span class="md-header-nav__topic">
+                第７章　仮説検定
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    kei_journutes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../../.." title="Bio" class="md-nav__link">
+      Bio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      エンジニア関連（computer）
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        エンジニア関連（computer）
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../エンジニア関連（computer）/Deep Learning/" title="Deep Learning" class="md-nav__link">
+      Deep Learning
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      ノート（Notes）
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        ノート（Notes）
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Mathematics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Mathematics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1-1" type="checkbox" id="nav-3-1-1">
+    
+    <label class="md-nav__link" for="nav-3-1-1">
+      教科書ノート
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-1-1">
+        教科書ノート
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Mathematics/教科書ノート/代数学１群論入門（雪江明彦）/" title="代数学１群論入門（雪江明彦）" class="md-nav__link">
+      代数学１群論入門（雪江明彦）
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Physics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Physics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2-1" type="checkbox" id="nav-3-2-1">
+    
+    <label class="md-nav__link" for="nav-3-2-1">
+      教科書ノート
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-2-1">
+        教科書ノート
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Physics/教科書ノート/Raum, Zeit, Materie (Hermann Wyle)/" title="Raum, Zeit, Materie (Hermann Wyle)" class="md-nav__link">
+      Raum, Zeit, Materie (Hermann Wyle)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../Physics/教科書ノート/微分幾何学とトポロジー（永長直人）/" title="微分幾何学とトポロジー（永長直人）" class="md-nav__link">
+      微分幾何学とトポロジー（永長直人）
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
+    
+    <label class="md-nav__link" for="nav-3-3">
+      Statistics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        Statistics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-1" type="checkbox" id="nav-3-3-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-3-1">
+      教科書ノート
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-3-3-1">
+        教科書ノート
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-3-1-1" type="checkbox" id="nav-3-3-1-1" checked>
+    
+    <label class="md-nav__link" for="nav-3-3-1-1">
+      入門・演習　数理統計
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-3-3-1-1">
+        入門・演習　数理統計
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        第７章　仮説検定
+      </label>
+    
+    <a href="./" title="第７章　仮説検定" class="md-nav__link md-nav__link--active">
+      第７章　仮説検定
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71" title="7.1 統計的仮説検定" class="md-nav__link">
+    7.1 統計的仮説検定
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711" title="7.1.1 帰無仮説と対立仮説" class="md-nav__link">
+    7.1.1 帰無仮説と対立仮説
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712" title="7.1.2 検定・検定統計量と，その棄却・採択域" class="md-nav__link">
+    7.1.2 検定・検定統計量と，その棄却・採択域
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-12" title="7.1.3 第１種，第２種の誤り" class="md-nav__link">
+    7.1.3 第１種，第２種の誤り
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#714" title="7.1.4 検出力関数，検定の大きさ，有意水準" class="md-nav__link">
+    7.1.4 検出力関数，検定の大きさ，有意水準
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#715-p" title="7.1.5 p値，有意確率" class="md-nav__link">
+    7.1.5 p値，有意確率
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      論文査読（Paper summary）
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        論文査読（Paper summary）
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../論文査読（Paper-summary）/test/" title="Test" class="md-nav__link">
+      Test
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      雑記
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        雑記
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      For capacity
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        For capacity
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../雑記/For capacity/" title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1-2" type="checkbox" id="nav-5-1-2">
+    
+    <label class="md-nav__link" for="nav-5-1-2">
+      数学
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-1-2">
+        数学
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../../雑記/For capacity/数学/H28専門/" title="H28専門" class="md-nav__link">
+      H28専門
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71" title="7.1 統計的仮説検定" class="md-nav__link">
+    7.1 統計的仮説検定
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#711" title="7.1.1 帰無仮説と対立仮説" class="md-nav__link">
+    7.1.1 帰無仮説と対立仮説
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#712" title="7.1.2 検定・検定統計量と，その棄却・採択域" class="md-nav__link">
+    7.1.2 検定・検定統計量と，その棄却・採択域
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#713-12" title="7.1.3 第１種，第２種の誤り" class="md-nav__link">
+    7.1.3 第１種，第２種の誤り
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#714" title="7.1.4 検出力関数，検定の大きさ，有意水準" class="md-nav__link">
+    7.1.4 検出力関数，検定の大きさ，有意水準
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#715-p" title="7.1.5 p値，有意確率" class="md-nav__link">
+    7.1.5 p値，有意確率
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="7">第７章　仮説検定<a class="headerlink" href="#7" title="Permanent link">#</a></h1>
+<h2 id="71">7.1 統計的仮説検定<a class="headerlink" href="#71" title="Permanent link">#</a></h2>
+<p><strong>統計的仮説検定</strong>：<br />
+パラメータの値が，パラメータ空間のある部分集合に含まれているかどうかを，標本をもとにして判定する方法</p>
+<p>ここでいう<code>パラメータ</code>とは，統計モデルがパラメトリックなモデル（パラメータを指定すると，モデルが確定するようなモデル．また，各パラメータで与えられるモデルはすべて独立でなければならない）であることを前提とした上でのものである．</p>
+<h3 id="711">7.1.1 帰無仮説と対立仮説<a class="headerlink" href="#711" title="Permanent link">#</a></h3>
+<p><strong>前提</strong></p>
+<p>パラメータ空間 <script type="math/tex">\Theta</script>を， <script type="math/tex">\Theta_0, \Theta_1\subset \Theta</script> の２つに分割する．<br />
+統計モデルを<script type="math/tex">\{f(x:\theta);\theta\in\Theta\subset\mathcal{R}\}</script> とし，<br />
+<script type="math/tex">\mathcal{X} = \{X_1,X_2,\cdots,X_n\}</script> をそこからのランダム標本とする．<br />
+ここでの統計モデルは，確率関数または確率密度関数とする．</p>
+<p><strong>定義</strong></p>
+<p>帰無仮説（null hypothesis）：<br />
+<script type="math/tex">H_0</script> ： <script type="math/tex">\theta\in\Theta_0</script>
+<br />
+対立仮説（alternative hypothesis）：<br />
+<script type="math/tex">H_1</script> ： <script type="math/tex">\theta\in\Theta_1</script>
+</p>
+<p>
+<script type="math/tex">\Theta_0</script> or <script type="math/tex">\Theta_1</script>の元が１つなら単純仮説（simple hypothesis），２つ以上なら複合仮説（composite hyphotesis）という．</p>
+<p><strong>Q：仮説検定とは</strong><br />
+付与データをもとに，帰無仮説 <script type="math/tex">H_0</script> を採択するか，棄却する（つまり対立仮説 <script type="math/tex">H_1</script> を採択する）という結論を出すこと．</p>
+<p><strong>Memo</strong>：<br />
+統計モデルが正規分布ならば，パラメータは平均 <script type="math/tex">\mu</script> と分散 <script type="math/tex">\sigma^2</script> である．例えば，平均値が <script type="math/tex">100</script> もしくは <script type="math/tex">200</script> なのがわかっていれば，パラメータ空間は <script type="math/tex">\Theta=\{100,200\}</script> であり，単純帰無仮説として <script type="math/tex">\Theta_0=100</script> をとれば，単純対立仮説として <script type="math/tex">\Theta_1=200</script> となる．</p>
+<h3 id="712">7.1.2 検定・検定統計量と，その棄却・採択域<a class="headerlink" href="#712" title="Permanent link">#</a></h3>
+<p><strong>検定（test）</strong>：<br />
+帰無仮説の採択・棄却を決定するのに用いる，データの値に対する規則．<br />
+例えば，データ <script type="math/tex">{\bf x}\in \mathcal{R}^n</script> が帰無仮説を棄却する時に入る部分集合 <script type="math/tex">C\subset\mathcal{R}^n</script> を決めておけば，それで十分である．</p>
+<p><strong>検定統計量（test statistic）</strong>：<br />
+検定に使われる統計量（上記のデータ <script type="math/tex">{\bf x}\in \mathcal{R}^n</script>のようなもの．）</p>
+<p><strong>棄却域（critical region）</strong>：<br />
+データ <script type="math/tex">{\bf x}\in \mathcal{R}^n</script> が帰無仮説を棄却する時に入る部分集合 <script type="math/tex">C\subset\mathcal{R}^n</script>．</p>
+<p><strong>採択域（acceptance region）</strong>：<br />
+<script type="math/tex">C</script> の補集合 <script type="math/tex">C^c</script> ．</p>
+<p><strong>検定関数</strong>（critical function）：<br />
+検定統計量が棄却域に入ったか否かをラベル付する関数
+<script type="math/tex; mode=display">
+\varphi({\bf x}) = \left\{
+\begin{array}{ll}
+1 & ({\bf x} \in C) \\
+0 & ({\bf x} \notin C)
+\end{array}
+\right.
+</script>
+単に「<strong>検定 <script type="math/tex">\varphi</script> </strong>」とも言う．</p>
+<p><em>片側検定（one-sided test）</em>：<br />
+対立仮説が <script type="math/tex">H_1:\theta >\theta_0</script> や <script type="math/tex">H_1:\theta < \theta_0</script> の形をしている検定．</p>
+<p><em>両側検定（two-sided test）</em>：<br />
+対立仮説が <script type="math/tex">H_1:\theta\neq\theta_0</script> （単純帰無仮説の場合と同値）の形をしている検定．</p>
+<h3 id="713-12">7.1.3 第１種，第２種の誤り<a class="headerlink" href="#713-12" title="Permanent link">#</a></h3>
+<p>統計的仮説検定の「誤り方」には二種類ある．</p>
+<ol>
+<li>帰無仮説が正しいにもかかわらず，これを棄却する．<br />
+（<strong>第１種（タイプ１）の誤り（error of  the first kind，type I error）</strong>）</li>
+<li>帰無仮説が誤っているにもかかわらず，これを採択する．<br />
+（<strong>第２種（タイプ２）の誤り（error of the second kind, type II error）</strong>）</li>
+</ol>
+<p>これらの<strong>「検定を誤る確率」を求める事には意義がある</strong>．数式で書き下すと，以下の通り．</p>
+<p>Type 1 error の確率：
+<script type="math/tex; mode=display">P_\theta[{\bf X}\in C|\theta \in \Theta_0]\qquad(=P_\theta[{\bf X}\in C|H_0]=P_\theta[{\bf X}\in C|\theta \in \Theta-\Theta_1])</script>
+Type 2 error の確率：
+<script type="math/tex; mode=display">P_\theta[{\bf X}\in C^C|\theta \in \Theta_1]\qquad(=P_\theta[{\bf X}\in C^C|H_1]=P_\theta[{\bf X}\in C^C|\theta \in \Theta-\Theta_0])</script>
+</p>
+<p>上記のカッコ内２つ目の式から自明な通り，Type1の確率が <script type="math/tex">0</script> の検定は，Type2の確率が <script type="math/tex">1</script> になる．どちらの確率も <script type="math/tex">0</script> になる検定が望ましいが，一般的にそのような検定は存在しない．実際には，例えば，あるType1の確率値を持ったもので，Type2が最も小さい検定を選ぶやり方を採用したりする．</p>
+<h3 id="714">7.1.4 検出力関数，検定の大きさ，有意水準<a class="headerlink" href="#714" title="Permanent link">#</a></h3>
+<p>実際に帰無仮説が正しくない時， 帰無仮説が棄却される確率が，その検定の「正しくパラメータを検出する力」と言える．（逆に，帰無仮説が正しくない時，帰無仮説が採択される確率は，Type II error である．）</p>
+<p><strong>検出力関数（power function）：</strong><br />
+すべてのパラメータ <script type="math/tex">\theta\in\Theta</script> に対して，帰無仮説を棄却する確率．
+<script type="math/tex; mode=display">\beta(\theta)=P_\theta[{\bf X}\in C]</script>
+<script type="math/tex">C</script> は前で定義したとおり，与えられたデータ <script type="math/tex">{\bf x}\in{\bf R}^n</script> が帰無仮説を棄却する時の部分集合 <script type="math/tex">C\subset {\bf R}^n</script> （棄却域）である．</p>
+<p>
+<script type="math/tex">\theta_1\in \Theta_1</script> のとき（つまり実際に帰無仮説が正しくない時）の <script type="math/tex">\beta(\theta_1)</script>（つまり帰無仮説が棄却される確率） を，<strong> <script type="math/tex">\theta_1</script> に対する検出力（power against <script type="math/tex">\theta_1</script>）</strong>という． </p>
+<p>検定関数 <script type="math/tex">\varphi({\bf x})</script> を用いると，その検定の検定力は，<script type="math/tex"> \theta\in\Theta</script> として，検定関数の期待値：
+ <script type="math/tex; mode=display">E_\theta [\varphi({\bf X})]</script>
+ と表すことができる．計算すれば，
+ <script type="math/tex; mode=display">
+  {\bf X}\in C,\quad \theta\in\Theta
+  </script>
+<script type="math/tex; mode=display">
+ \begin{align}
+ E_\theta[\varphi({\bf X})] &= \frac{1}{n}\sum_{i=1}^{n} \varphi_\theta({\bf x}_i)\\
+ &= P_\theta[{\bf X}\in C] \\
+ &= \beta(\theta) \qquad\qquad(Q.E.D)
+ \end{align}
+ </script>
+</p>
+<p>逆に， <script type="math/tex">\theta_0 \in \Theta_0</script> のときの <script type="math/tex">\beta(\theta_0)</script> は，帰無仮説が正しい時に，帰無仮説を棄却する確率であり，これはただの Type I error 確率である．これを用いて，次のことを定める．</p>
+<p><strong>検定の大きさ（size of a test）：</strong><br />
+ 帰無仮説のもとでのパラメータの中で，Type I error （帰無仮説が正しいのに棄却する）確率の最大のもの．
+ <script type="math/tex; mode=display">\alpha=\sup_{\theta\in\Theta_0}\beta(\theta)</script>
+</p>
+<p><strong>有意水準（level of significance)：</strong><br />
+ 検定を行う際の基準として仮説的に設ける，検定の大きさの最大値．<br />
+ 例えば，「有意水準 <script type="math/tex">\alpha_0</script> の検定を行う」という意味は，ある値 <script type="math/tex">\alpha_0(0<\alpha_0<1)</script>を仮説的に定め，検定の大きさが <script type="math/tex">\alpha_0</script> より小さい（つまり<script type="math/tex">\alpha\leq\alpha_0</script>である ）ような <script type="math/tex">\alpha</script> を用いて検定を行う，ということである．この時，「有意水準 <script type="math/tex">\alpha_0</script> の検定では，帰無仮説が（正しいにもかかわらず）有意水準 <script type="math/tex">\alpha_0</script> で棄却された」という．</p>
+<p>有意水準の値は，通常 <script type="math/tex">0.01,0.05</script> などが用いられるが，その選択は任意であり，状況や，特に Type I error の重大さに依存する．</p>
+<h3 id="715-p">7.1.5 p値，有意確率<a class="headerlink" href="#715-p" title="Permanent link">#</a></h3>
+<p><strong>p値（p-value），有意確率（significance probability）</strong>：<br />
+与えられたデータの値に対し，帰無仮説を棄却できる最小の有意水準．（Type I error を起こす最小の検定の大きさ）</p>
+<p>例示</p>
+<blockquote>
+<p>たとえば，ある観測値を得たところ，有意確率が0.08であったということは，有意水準が0.08以上の検定では，この観測値をもとにした場合は，帰無仮説は棄却されるということ．対して，有意水準0.08以下の検定では，帰無仮説は棄却されないということである．</p>
+</blockquote>
+<p>有意確率は，帰無仮説が正しいとした時，実際に得られた値（また，もっと極端な値）を観測する確率．よって，次のようにとらえられる：
+<script type="math/tex; mode=display">有意確率=データと帰無仮説との一致率（乖離率）</script>
+有意確率が小さければ，それだけ帰無仮説に一致しているということになる．</p>
+<p>例7.1.5</p>
+<blockquote>
+<p>
+<script type="math/tex">X</script>を未知の平均 <script type="math/tex">\mu</script> と分散１の正規分布に従っているとする． <script type="math/tex">H_0</script>： <script type="math/tex">\mu\leq 10</script> ， <script type="math/tex">H_1</script> ： <script type="math/tex">\mu >10</script> をそれぞれ帰無仮説，対立仮説とする． <script type="math/tex">X</script> の値が <script type="math/tex">k</script> より大きい時，帰無仮説を棄却する．すなわち，棄却域は <script type="math/tex">C=\{x:x>k\}</script> の形になる．ここで， <script type="math/tex">k</script> は有意水準によって決まる定数である．有意水準を0.05とすると，
+<script type="math/tex; mode=display">
+P[X\in C|\mu\leq 10]=P[X>k|\mu\leq 10]\leq 0.05
+</script>
+より， <script type="math/tex">k=11.645</script> のとき，
+<script type="math/tex; mode=display">
+P\left[Z>\frac{(11.645-10)}{1}\right]=0.05
+</script>
+である．（ <script type="math/tex">Z</script> は標準正規分布に従う確率変数）． <script type="math/tex">X</script> が11.645より大きいときは，帰無仮説を棄却する検定は有意水準0.05の検定であり，その検出力関数は，
+<script type="math/tex; mode=display">
+\begin{array}
+\beta(\mu) &= P_\mu[X\in C] = P_\mu[X>11.645] = P\left[Z>\frac{(11.645-\mu)}{1}\right] \\
+&= 1-\Phi\left[\frac{(11.645-\mu)}{1}\right]
+\end{array}
+</script>
+で与えられる，（ <script type="math/tex">Z</script>は標準正規分布に従う確率分布，<script type="math/tex">\Phi(z)</script>は，標準正規分布の分布関数）．たとえば， <script type="math/tex">\mu = 10.745</script> に対するこの検定の検出力は，
+<script type="math/tex; mode=display">
+\beta(10.745) = P\left[Z>\frac{(11.645-10.745)}{1}\right] = 1-\Phi(0.9) = 0.1841.
+</script>
+<script type="math/tex"> \mu = 12.745 </script> に対する検出力は，
+<script type="math/tex; mode=display">
+\beta(12.745) = P\left[Z>\frac{(11.645-12.745)}{1}\right] = 1-\Phi(-1.1) = 0.8643.
+</script>
+<script type="math/tex"> \mu = 13.645</script> に対する検出力は，
+<script type="math/tex; mode=display">
+\beta(13.645) = P\left[Z>\frac{(11.645-13.645)}{1}\right] = 1-\Phi(-2.0) = 0.9773.
+</script>
+検定の大きさは，
+<script type="math/tex; mode=display">
+\alpha = \sup_{\mu\leq 10}\beta(\mu) = \sup_{\mu\leq 10}P\left[Z>\frac{(11.645-\mu)}{1}\right] = 1-\Phi(1.645) = 0.05.
+</script>
+実際に観測値が12.1であったとすると，12.1は棄却域に入るので，帰無仮説 <script type="math/tex">H_0:\mu\leq 10</script> は，有意水準0.05で棄却され， <script type="math/tex">\mu</script> は10よりも大きいという結論が導かれる．<br />
+また， <script type="math/tex; mode=display">P[X>12.1|\mu=10] = P]Z>2.1] = 0.0179</script>
+が有意確率である，この観測値の時，有意水準が0.0179以上の検定では帰無仮説を棄却し，有意水準が0.0179より小さい検定においては，棄却しない．すなわち，帰無仮説が正しいとすると（ <script type="math/tex">\mu = 10</script> の時）， <script type="math/tex">X=12.1</script> よりも大きい値を観測する確率は， <script type="math/tex">0.0179</script> である．この確率を十分小さいと思うときは，このデータは帰無仮説下での分布に従うとするよりは，対立仮説のもとでの分布に従うと考えるほうが自然であり，対立仮説を採択するわけである．</p>
+</blockquote>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../../../Physics/教科書ノート/微分幾何学とトポロジー（永長直人）/" title="微分幾何学とトポロジー（永長直人）" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                微分幾何学とトポロジー（永長直人）
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../../../論文査読（Paper-summary）/test/" title="Test" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Test
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Kei Nakajima Copyright (c) 2018
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../../assets/javascripts/application.6cdc17f0.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../../../../.."}})</script>
+      
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
