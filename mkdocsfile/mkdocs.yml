@@ -5,10 +5,13 @@ site_author: 'Kei-Nakajima'
 site_url: 'https://kei-nakajima.github.io'
 
  # Copyright
-copyright: 'Kei Nakajima Copyright (c) 2017'
+copyright: 'Kei Nakajima Copyright (c) 2018'
 
-theme: material
+# Documentation and theme
+docs_dir: 'docs'
+theme: 'material'
 
+# Options
 extra:
     palette:
         primary: 'Light Blue'
@@ -20,8 +23,8 @@ extra:
         prev: 'Previous'
         next: 'Next'
     author:
-        github: 'kei-nakajima'
-        twitter: 'NjK'
+        github: 'https://github.com/Kei-Nakajima/kei-nakajima.github.io'
+        twitter: 'https://twitter.com/NovaPleiades'
 
 extra_css:
     - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
@@ -31,8 +34,8 @@ extra_css:
 
 
 extra_javascript:
-  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML
+  - 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML'
 
 markdown_extensions:
     - mdx_math:
@@ -40,3 +43,5 @@ markdown_extensions:
     - admonition
     - fontawesome_markdown
     - pymdownx.emoji
+    - toc:
+        permalink: '#'
