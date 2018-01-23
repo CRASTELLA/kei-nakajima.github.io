@@ -9,7 +9,7 @@ copyright: 'Kei Nakajima Copyright (c) 2018'
 
 # Documentation and theme
 docs_dir: 'docs'
-theme: 'material'
+theme: material
 
 # Options
 extra:
@@ -41,6 +41,7 @@ markdown_extensions:
     - mdx_math:
         enable_dollar_delimiter: true
     - admonition
+    - footnotes
     - fontawesome_markdown
     - pymdownx.emoji
     - toc:
